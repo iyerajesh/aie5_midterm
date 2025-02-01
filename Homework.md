@@ -15,7 +15,8 @@
   
    How could we impose a limit?
    
-   All of the ways to limit cycles are different kinds of logic that is embedded in the code for agents
+   All of the ways to limit cycles are different kinds of logic that is embedded in the code for agents and associating them with conditional
+   edges using LangGraph
    * Counter for a set number of cycles and then move to a pause or end state
    * Logic that checks for the desired outcome of the action and then terminates
    * Time based, perform or take action during a specific time or monitor for a specific period of time
