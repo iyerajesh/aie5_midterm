@@ -13,4 +13,5 @@ dependencies = [
     "langchain-google-community>=2.0.4",
     "langchain-openai>=0.3.2",
     "langgraph>=0.2.67",
+    "websockets",
 ]

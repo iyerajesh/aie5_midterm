@@ -13,3 +13,4 @@ langgraph
 arxiv 
 langchain-google-community 
 googlesearch-python
+websockets
