@@ -1,15 +1,13 @@
-# Fact Checking AI Agent using Tavily, Arxiv, Google Search
+# AI agent to help with weight loss and obesity related questions using Tavily, Arxiv, Google Search
 
-**Problem Statement**: Misinformation and Fake information are rampant online.
+**Problem Statement**: AI agent to help with weight loss and obesity related questions
 
-**Use Case**: Automated Fact-Checking News Articles
-
-**Test Agent** [https://huggingface.co/spaces/rprav007/LangGraph_3_Tool_Research_Agent]
+**Use Case**: Weight loss and obesity related questions
 
 **Tools:**
 
-1. Tavily - Get the claims and statements from the news article that needs to be verified
-2. Arxiv - Search research papers and publications that support or refute the claims
+1. Tavily - Get the news article that needs to be verified
+2. Arxiv - Search research papers and publications that support the question asked by the user
 3. Google Search - Match claims with reliable sources such as government, fact checking websites to connect the dots
 
 **Workflow:**

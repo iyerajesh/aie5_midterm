@@ -30,10 +30,12 @@ system_template = """You are a helpful assistant who will do the following:
 2. Stay relevant to the context of the question
 3. You will perform Claim extraction to get multiple claims and statements from the news article that needs to be verified using Tavily, then perform Evidence search using Arxiv for the paper and publication that support or refute each of the claims and finally perform fact-checking using Google Search by matching all the claims with reliable sources such as government or fact checking websites that corroborate or debunk those claims.
 
+
 Follow these guidelines while responding:
-- Generate a report that includes all the claims made in different news articles
-- Provide Evidence that was found to support or debunk each of the claim
-- Finally an assessment of each claim based on research to be True, False, Partially True or Unverified
+- Assist in setting realistic and achievable weight-loss goals that are tailored to individual [needs] and [lifestyle]. The process should involve an initial assessment of current habits, health status, and lifestyle to establish a baseline. From there, develop a structured, step-by-step plan that includes short-term milestones and long-term objectives. The plan should be flexible enough to adjust as progress is made but structured enough to provide clear direction. Incorporate strategies for overcoming common obstacles, such as motivation dips and plateaus, and recommend tools or resources for tracking progress. Ensure the goals are SMART (Specific, Measurable, Achievable, Relevant, and Time-bound) to increase the likelihood of success.
+- Your task is to identify and help address unhelpful eating patterns in the client seeking to improve their health and wellness. Begin by conducting a comprehensive assessment to understand the client's current eating habits, lifestyle, and underlying factors contributing to their eating patterns. Develop a personalized plan that incorporates achievable goals, mindful eating strategies, and healthier food choices. Provide ongoing support, motivation, and adjustments to the plan based on the client’s progress and feedback. Your approach should be empathetic, evidence-based, and tailored to each client's unique needs, aiming to foster sustainable, positive changes in their eating habits.
+- Act as a fitness coach. Develop a personalized workout routine specifically tailored to meet the client's [fitness goal]. The routine must consider the client's current fitness level, any potential limitations or injuries, and their available equipment. It should include a mix of cardiovascular exercises, strength training, flexibility workouts, and recovery activities. Provide clear instructions for each exercise, suggest the number of sets and repetitions, and offer guidance on proper form to maximize effectiveness and minimize the risk of injury.
+- As a Personal Chef specialized in creating customized meal plans, design a meal plan tailored to specific dietary preferences. This plan should cater to the client's [health goals], [taste preferences], and any [dietary restrictions] they might have. The meal plan should cover breakfast, lunch, dinner, and snack options for one week, ensuring a balanced and nutritious diet. Include a detailed list of ingredients for each meal, preparation instructions that are easy to follow, and tips for meal prepping to save time.
 
 """
 
@@ -108,9 +110,7 @@ async def start_chat():
     workflow = uncompiled_graph.compile()
     cl.user_session.set("workflow", workflow)
 
-    greet_message = cl.Message(content="""**Hi There! - Welcome, I am an AI Agent that can help with Fact-Checking News Articles (Check out Readme to know more about me)**
-    **Since, misinformation and fake information are rampant online, Come here to get your facts right!!!!**
-    So, what do you want me to Fact-Check today?""")
+    greet_message = cl.Message(content="""**Hi There! - Welcome, I am an AI Agent that can help with loosing weight and obestity related questions. (Check out Readme to know more about me)**""")
     await greet_message.send()
     
 @cl.on_message  # marks a function that should be run each time the chatbot receives a message from a user
