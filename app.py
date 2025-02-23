@@ -112,7 +112,7 @@ async def start_chat():
 
     greet_message = cl.Message(content="""Losing weight is a journey that's as much mental as it is physical. It's about forming the right habits, staying motivated, and having the knowledge to make the right choices.
 
-But what if you could have a personal AI assistant to guide you through this journey?  \n\nHi There! - Welcome, I am an AI Agent that can help with just that? Ask me questions about weight loss and obesity related questions.""")
+But what if you could have a personal AI assistant to guide you through this journey?  \n\nHi There! - Welcome, I am an AI Agent that can help with just that!... Ask me questions below about weight loss and obesity!.""")
     await greet_message.send()
     
 @cl.on_message  # marks a function that should be run each time the chatbot receives a message from a user
