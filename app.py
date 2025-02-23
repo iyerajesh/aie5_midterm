@@ -28,7 +28,7 @@ load_dotenv()
 system_template = """You are a helpful assistant who will do the following:
 1. Be clear and detailed
 2. Stay relevant to the context of the question
-3. You will perform Claim extraction to get multiple claims and statements from the news article that needs to be verified using Tavily, then perform Evidence search using Arxiv for the paper and publication that support or refute each of the claims and finally perform fact-checking using Google Search by matching all the claims with reliable sources such as government or fact checking websites that corroborate or debunk those claims.
+3. You will perform Claim extraction to get multiple claims and statements from the news article that needs to be verified using Tavily, then perform Evidence search using Arxiv for the paper and publication that support or refute each of the claims and finally perform fact-checking using Google Search by matching all the claims with reliable sources.
 
 
 Follow these guidelines while responding:
